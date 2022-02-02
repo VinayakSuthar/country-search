@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="build.css" rel="stylesheet" />
+    <title>Country Search</title>
+  </head>
+  <body
+    class="bg-gray-800 text-white flex flex-col justify-center items-center"
+  >
+    <header class="h-24 flex justify-center items-center w-full">
+      <h1 class="text-3xl font-bold" id="title">Country Search</h1>
+    </header>
+    <main
+      class="container flex justify-center items-center flex-col min-h-screen"
+    >
+      <div
+        class="search-container min-h-[86vh] flex flex-col justify-center items-center gap-x-12 w-full"
+      >
+        <form
+          id="form"
+          class="w-full flex flex-col justify-center items-center px-4"
+        >
+          <input
+            type="text"
+            id="search"
+            placeholder="Search country"
+            autocomplete="off"
+            class="border-2 border-black rounded-md p-1 outline-none text-center text-black w-full max-w-md mb-3"
+          />
+        </form>
+        <div
+          id="country"
+          class="flex justify-center items-center flex-col gap-y-4 mb-40 mt-10"
+        ></div>
+      </div>
+      <div
+        id="countries"
+        class="countries-list w-full flex flex-wrap flex-col xl:h-[1200px] md:h-[2200px] sm:h-[3200px] h-auto text-center sm:text-left"
+      ></div>
+      <div id="loader"></div>
+    </main>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
